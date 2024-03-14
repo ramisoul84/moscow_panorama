@@ -2,7 +2,7 @@ function viewPanorama() {
   pannellum.viewer("panorama", {
     type: "equirectangular",
     panorama: "./assets/pic.jpg",
-    title: "Литовский Бульвар 44",
+    //title: "Литовский Бульвар 44",
     autoLoad: true,
     showZoomCtrl: true,
     autoRotate: 2,

@@ -4,7 +4,59 @@
   box-sizing: border-box;
 }
 
+body {
+  display: flex;
+}
 #panorama {
-  width: 100vw;
+  width: 80vw;
   height: 100vh;
+}
+#list {
+  width: 20vw;
+  height: 100vh;
+  padding: 10px;
+}
+ul {
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+li {
+  color: black;
+  margin-bottom: 0.6rem;
+}
+li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.location {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 1.4rem;
+  margin: 1rem;
+  padding: 0 1rem;
+  border-radius: 0.6rem;
+  background-color: rgba(32, 30, 30, 0.8);
+  color: white;
+  z-index: 1;
+}
+.location:hover {
+  background-color: rgba(32, 30, 30, 1);
+  cursor: pointer;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  #panorama {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  #list {
+    display: none;
+  }
 }
